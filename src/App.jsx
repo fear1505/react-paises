@@ -1,15 +1,14 @@
 import { useState } from "react";
 import Formulario from "./Components/Formulario";
-import ListaPaises from "./Components/ListaPaises";
+import PintarDatos from "./Components/PintarDatos"
 
 const App = () => {
-  const [pais, setPais] = useState("")
-  
+  const [nombrePais , setNombrePais] = useState("venezuela")
   return (
     <div className="container">
-      <h1>Hola a todos</h1>
-      <Formulario setPais={setPais}/>
-      <ListaPaises pais={pais}/>
+      <h1>App Paises</h1>
+      <Formulario setNombrePais={setNombrePais}/>
+      <PintarDatos nombrePais={nombrePais}/>
     </div>
   )
 }
