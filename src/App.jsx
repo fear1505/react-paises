@@ -3,7 +3,7 @@ import Formulario from "./Components/Formulario";
 import PintarDatos from "./Components/PintarDatos"
 
 const App = () => {
-  const [nombrePais , setNombrePais] = useState("venezuela")
+  const [nombrePais , setNombrePais] = useState("")
   return (
     <div className="container">
       <h1>App Paises</h1>
